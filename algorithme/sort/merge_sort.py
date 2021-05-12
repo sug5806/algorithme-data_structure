@@ -2,10 +2,10 @@ import random
 
 
 def split(list_data):
-    mid_index = int(len(list_data) / 2)
-
-    if mid_index < 1:
+    if len(list_data) < 1:
         return list_data
+
+    mid_index = len(list_data) // 2
 
     left_list = split(list_data[:mid_index])
     right_list = split(list_data[mid_index:])
