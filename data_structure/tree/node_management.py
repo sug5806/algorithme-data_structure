@@ -34,3 +34,21 @@ class NodeManagement:
                 self.current_node = self.current_node.right
 
         return False
+
+    def delete(self, value):
+        searched = False
+        self.current_node = self.root
+        self.parent = self.root
+        while self.current_node:
+            if self.current_node.value == value:
+                searched = True
+                break
+            elif value < self.current_node.value:
+                self.parent = self.current_node
+                self.current_node = self.current_node.left
+            else:
+                self.parent = self.current_node
+                self.current_node = self.current_node.right
+
+        if searched == False:
+            return False
