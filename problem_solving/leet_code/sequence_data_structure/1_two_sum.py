@@ -1,6 +1,6 @@
 from typing import List
 
-
+# 두 수의 합이 target이 되는 인덱스 반환하기
 def twoSum(nums: List[int], target: int) -> List[int]:
     nums_map = {}
 
