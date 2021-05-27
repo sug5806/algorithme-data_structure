@@ -13,4 +13,4 @@ def groupAnagrams(strs: List[str]) -> List[List[str]]:
 
 if __name__ == "__main__":
     example = ["eat", "tea", "tan", "ate", "nat", "bat"]
-    groupAnagrams(example)
+    print(groupAnagrams(example))
